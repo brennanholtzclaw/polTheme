@@ -1,0 +1,16 @@
+<div class="item header padding-bottom-0" id="header2">
+  <nav role="navigation" class="navbar plain">
+    <div class="navbar-header">
+      <a href="{{ 'home' |page }}" class="navbar-brand"><img alt="Points of Light" src="{{ 'assets/images/polIcon.jpg'|theme }}" style="height: 100%;"></a>
+    </div>
+
+    <div id="navbar-collapse-02" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        {% if this.page.id != 'home' %}<li class="propClone"><a href="{{ 'home' |page }}">Home</a></li> {% endif %}
+        {% if this.page.id != 'opportunities' %}<li class="propClone"><a href="{{ 'opportunities'| page }}">Opportunities</a></li> {% endif %}
+        {% if this.page.id != 'blog' %}<li class="propClone"><a href="{{ 'blog'|page }}">Blog</a></li> {% endif %}
+        {% if this.page.id != 'contact' %}<li class="propClone"><a href="{{ 'contact'|page }}">Contact</a></li> {% endif %}
+      </ul>
+    </div>
+  </nav>
+</div>
